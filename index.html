@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tender & Licence - Government Licensing, Registration & Tender Consultancy in India</title>
+    <meta name="description" content="Tender & Licence helps Indian businesses get government licences, registrations, and tender filings done right - PSARA, Electrical Contractor, FSSAI, GeM, IREPS, and more.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Tender & Licence - Government Licensing & Tender Consultancy">
+    <meta property="og:description" content="Pan-India licensing, registration, and tender consultancy. PSARA, Electrical, FSSAI, GeM, IREPS, ISO, BIS, Trademark and more.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --ink: #1b1b2f;
+            --body: #3a3a52;
+            --muted: #6b7280;
+            --accent: #1d4ed8;
+            --accent-light: #eff6ff;
+            --surface: #ffffff;
+            --bg: #f7f8fa;
+            --border: #e5e7eb;
+            --radius: 8px;
+        }
+
+        body {
+            font-family: 'DM Sans', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--body);
+            line-height: 1.7;
+            font-size: 16.5px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            background: var(--ink);
+            color: #fff;
+            padding: 18px 24px;
+            text-align: center;
+        }
+        .site-header .brand {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.55rem;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .site-header .brand:hover { text-decoration: none; }
+        .site-header .brand span { color: #60a5fa; }
+        .site-header .tagline {
+            font-size: 13px;
+            color: #94a3b8;
+            margin-top: 4px;
+            letter-spacing: 0.4px;
+        }
+
+        /* ─── HERO ─── */
+        .hero {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 56px 24px 40px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--ink);
+            line-height: 1.25;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            max-width: 640px;
+            margin: 0 auto 28px;
+            font-size: 1.05rem;
+            color: var(--body);
+        }
+        .hero .cta-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 13px 32px;
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 15px;
+            transition: background 0.2s;
+        }
+        .hero .cta-btn:hover { background: #1e40af; text-decoration: none; }
+
+        /* ─── ABOUT ─── */
+        .about-section {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 0 24px 48px;
+        }
+        .about-section h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.55rem;
+            color: var(--ink);
+            margin-bottom: 16px;
+        }
+        .about-section p { margin-bottom: 16px; }
+
+        /* ─── SERVICES GRID ─── */
+        .services-wrap {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px 56px;
+        }
+        .services-wrap h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.55rem;
+            color: var(--ink);
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            transition: box-shadow 0.2s;
+        }
+        .service-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+        }
+        .service-card h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 8px;
+        }
+        .service-card p {
+            font-size: 14.5px;
+            color: var(--muted);
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        .service-card a.card-link {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* ─── WHY US ─── */
+        .why-section {
+            background: var(--accent-light);
+            padding: 48px 24px;
+        }
+        .why-inner {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+        .why-inner h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.55rem;
+            color: var(--ink);
+            margin-bottom: 20px;
+        }
+        .why-inner p { margin-bottom: 14px; }
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 24px;
+        }
+        .why-item {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .why-item strong {
+            display: block;
+            color: var(--ink);
+            margin-bottom: 4px;
+            font-size: 15px;
+        }
+        .why-item span {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.55;
+        }
+
+        /* ─── OFFICES ─── */
+        .offices-section {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .offices-section h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.55rem;
+            color: var(--ink);
+            margin-bottom: 20px;
+        }
+        .office-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .office-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+        }
+        .office-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 6px;
+        }
+        .office-card p {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.55;
+        }
+
+        /* ─── FOOTER ─── */
+        .site-footer {
+            background: var(--ink);
+            color: #94a3b8;
+            text-align: center;
+            padding: 28px 24px;
+            font-size: 13.5px;
+        }
+        .site-footer a { color: #60a5fa; }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 1.65rem; }
+            .hero { padding: 40px 20px 32px; }
+            .why-grid, .office-cards { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <a href="https://tender-licence.com/" class="brand">Tender <span>&amp;</span> Licence</a>
+    <p class="tagline">Government Licensing &middot; Registration &middot; Tender Consultancy</p>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>We Help Indian Businesses Get Their Licences, Registrations &amp; Tenders Sorted</h1>
+    <p>Running a business in India means dealing with a lot of government paperwork  - licences that need the right documents filed at the right department, registrations with deadlines that don't wait, and tenders where a single missing form can disqualify your bid. That's what we handle, so you don't have to figure it out alone.</p>
+    <a href="https://tender-licence.com/contact/" class="cta-btn">Talk to Us</a>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section">
+    <h2>What Tender &amp; Licence Actually Does</h2>
+    <p>We're a licensing and compliance consultancy based in Lucknow, with a second office in Gurugram. The work is straightforward: businesses come to us when they need a government licence, a registration, a certification, or help filing a tender  - and we handle the paperwork, the submission, the follow-up, and the back-and-forth with the department until the job is done.</p>
+    <p>Most of our clients are contractors, small business owners, and firms that know what they want to do but don't have the time or patience to navigate government processes themselves. We've built our practice around the filings we do most often  - PSARA, electrical contractor licences, FSSAI, GeM registration, railway and state tenders  - because doing the same types of applications regularly means we know exactly what each department expects and where files typically get stuck.</p>
+    <p>We don't guarantee approvals (no honest consultant can), and we don't claim to have special access. What we do is make sure your file is complete, correctly structured, and submitted properly the first time, which is genuinely the biggest factor in how fast things move.</p>
+</section>
+
+<!-- SERVICES -->
+<section class="services-wrap">
+    <h2>What We Work On</h2>
+    <div class="services-grid">
+
+        <div class="service-card">
+            <h3>PSARA License</h3>
+            <p>For private security agencies operating anywhere in India  - guard services, event security, cash-in-transit, bodyguard agencies. We handle UP, and other state filings.</p>
+            <a href="https://tender-licence.com/psara-license/" class="card-link">PSARA License &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Electrical Contractor License</h3>
+            <p>State-specific electrical contractor licences for Delhi, UP, Maharashtra, Gujarat, Andhra Pradesh  - each state has its own rules, and we file for all of them.</p>
+            <a href="https://tender-licence.com/electrical-contractor-license/" class="card-link">Electrical Contractor License &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Electrical Contractor License  - Delhi</h3>
+            <p>Delhi's single-license system (no Class A/B/C), Rs 5,000 fee, 25-year validity. We handle the e-District filing, documents, and Inspectorate follow-up.</p>
+            <a href="https://tender-licence.com/electrical-contractor-license-delhi/" class="card-link">Delhi Electrical License &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Electrical Contractor Licence  - UP</h3>
+            <p>Class A through Class D electrical contractor licences in Uttar Pradesh, including the annual renewal cycle and supervisor/wireman requirements.</p>
+            <a href="https://tender-licence.com/electrical-contractor-licence-up/" class="card-link">UP Electrical Licence &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Electrical Supervisor &amp; Wireman License UP</h3>
+            <p>Individual competency certificates for electrical supervisors and wiremen in Uttar Pradesh  - needed before your firm can take on projects.</p>
+            <a href="https://tender-licence.com/electrical-wireman-supervisor-license-up/" class="card-link">Supervisor &amp; Wireman License &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>FSSAI Registration</h3>
+            <p>Food licence and registration for restaurants, caterers, food manufacturers, and packaged-food businesses in Lucknow and across UP.</p>
+            <a href="https://tender-licence.com/fssai-registration-in-lucknow/" class="card-link">FSSAI Registration &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>GeM Registration</h3>
+            <p>Seller and service-provider registration on the Government e-Marketplace  - so your business can bid on and supply to government buyers.</p>
+            <a href="https://tender-licence.com/gem-registration-consultant/" class="card-link">GeM Registration &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>IREPS Railway Tender</h3>
+            <p>Vendor registration and tender filing on the Indian Railways e-Procurement System. We handle the registration, bid preparation, and submission.</p>
+            <a href="https://tender-licence.com/railway-tender-registration/" class="card-link">IREPS Registration &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>UP State Tender Filing</h3>
+            <p>Registration and bid filing for Uttar Pradesh government tenders  - e-tendering portals, document preparation, and submission support.</p>
+            <a href="https://tender-licence.com/up-tender-registration/" class="card-link">UP Tender Filing &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>CPWD Registration</h3>
+            <p>Contractor registration with the Central Public Works Department for civil, electrical, and other works categories.</p>
+            <a href="https://tender-licence.com/cpwd-consultant-in-lucknow/" class="card-link">CPWD Consultant &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Import Export Code (IEC)</h3>
+            <p>IEC registration for businesses looking to import or export goods  - a one-time code issued by DGFT that's mandatory for cross-border trade.</p>
+            <a href="https://tender-licence.com/import-export-code/" class="card-link">Import Export Code &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>ISO &amp; BIS Certification</h3>
+            <p>ISO certification for quality management systems and BIS certification for products that require Bureau of Indian Standards compliance.</p>
+            <a href="https://tender-licence.com/iso-certification/" class="card-link">ISO Certification &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Trademark Registration</h3>
+            <p>Protect your brand name, logo, or tagline with a registered trademark  - we handle the filing, objection responses, and follow-up.</p>
+            <a href="https://tender-licence.com/trademark/" class="card-link">Trademark &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Digital Signature Certificate</h3>
+            <p>Class 3 DSC for e-tendering, MCA filings, GST, and other government portals that require a digital signature for online submissions.</p>
+            <a href="https://tender-licence.com/digital-signature/" class="card-link">Digital Signature &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>GST &amp; MSME Registration</h3>
+            <p>New GST registration, MSME/Udyam registration, and related entity setup for proprietorships, partnerships, LLPs, and companies.</p>
+            <a href="https://tender-licence.com/firm-registration/" class="card-link">GST &amp; MSME &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Drug License</h3>
+            <p>Wholesale and retail drug licence for pharmacies, medical stores, and pharmaceutical distributors  - state Drug Controller filings.</p>
+            <a href="https://tender-licence.com/drug-license-consultant/" class="card-link">Drug License &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Bar License</h3>
+            <p>Liquor and bar licence application and renewal assistance for restaurants, hotels, and retail liquor establishments.</p>
+            <a href="https://tender-licence.com/bar-license/" class="card-link">Bar License &rarr;</a>
+        </div>
+
+        <div class="service-card">
+            <h3>Shop &amp; Establishment Registration</h3>
+            <p>Mandatory registration under your state's Shops and Establishments Act for any commercial premises employing staff.</p>
+            <a href="https://tender-licence.com/shop-establishment-registration/" class="card-link">Shop Registration &rarr;</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-section">
+    <div class="why-inner">
+        <h2>Why Businesses Work With Us</h2>
+        <p>There are a lot of consultants in this space, and we won't pretend otherwise. Here's what tends to make the difference with the clients who stick with us:</p>
+        <div class="why-grid">
+            <div class="why-item">
+                <strong>We file what we know</strong>
+                <span>We don't take on every licence type under the sun. We stick to the categories we process regularly, which means we know the current forms, the current fee slabs, and the current department expectations  - not last year's version.</span>
+            </div>
+            <div class="why-item">
+                <strong>Complete file, first time</strong>
+                <span>Most delays in government licensing come from incomplete submissions. We build the file properly before it goes in, so you're not stuck in a resubmission loop for weeks.</span>
+            </div>
+            <div class="why-item">
+                <strong>Follow-up until it's done</strong>
+                <span>We don't just submit and disappear. Department queries, verification calls, missing-document requests  - we handle the back-and-forth until the licence or registration is actually in your hand.</span>
+            </div>
+            <div class="why-item">
+                <strong>Two offices, pan-India reach</strong>
+                <span>Headquartered in Lucknow with a Gurugram office. We handle filings across states  - UP, Delhi, Maharashtra, Gujarat, Andhra Pradesh  - wherever the department is, we file there.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OFFICES -->
+<section class="offices-section">
+    <h2>Where to Find Us</h2>
+    <div class="office-cards">
+        <div class="office-card">
+            <h3>Lucknow (Head Office)</h3>
+            <p>FF-23, Uday Tower, Katautha Chauraha,<br>Vijyant Khand, Gomti Nagar,<br>Lucknow  - 226010</p>
+        </div>
+        <div class="office-card">
+            <h3>Gurugram</h3>
+            <p>K-1309, Green Court,<br>Sector 90,<br>Gurugram  - 122505</p>
+        </div>
+    </div>
+    <p style="margin-top: 20px; font-size: 15px; color: var(--muted);">
+        Phone: <a href="tel:+918010501995">+91 8010501995</a> &nbsp;|&nbsp; <a href="tel:+917379895262">+91 7379895262</a><br>
+        Email: <a href="mailto:info@tender-licence.com">info@tender-licence.com</a><br>
+        Website: <a href="https://tender-licence.com/">tender-licence.com</a>
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <p>&copy; 2026 <a href="https://tender-licence.com/">Tender &amp; Licence</a> &middot; Government Licensing, Registration &amp; Tender Consultancy</p>
+</footer>
+
+</body>
+</html>
